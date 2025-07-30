@@ -28,3 +28,5 @@
 2025-07-30T00:51:53.849+08:00 DEBUG 20368 --- [Springboot2Pra07] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
 2025-07-30T00:51:53.854+08:00 DEBUG 20368 --- [Springboot2Pra07] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
 2025-07-30T00:51:53.854+08:00 DEBUG 20368 --- [Springboot2Pra07] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-30T01:03:52.927+08:00  INFO 20368 --- [Springboot2Pra07] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-30T01:03:53.074+08:00  INFO 20368 --- [Springboot2Pra07] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
