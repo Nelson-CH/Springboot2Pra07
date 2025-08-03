@@ -11,6 +11,8 @@ import java.util.List;
 
 /*
 @PropertySource 不是「改變」 @Value 的配置來源，而是**「額外加入」**一個新的配置檔，讓 @Value 可以從中取值。
+Spring 的 classpath 指的是「你的編譯後 .class 檔所在的 classpath 目錄」，通常就是：
+src/main/resources, 把另外要加的配置檔放在 resource 資料夾底下就好.
 */
 @PropertySource("classpath:my.properties")
 @RestController
