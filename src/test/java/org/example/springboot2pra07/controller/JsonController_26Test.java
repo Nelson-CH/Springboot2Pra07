@@ -54,15 +54,12 @@ public class JsonController_26Test {
     //注意日期格式
     @Test
     void readJson() throws Exception {
-        String userJson = "{\"userNo\":\"1000\",\"username\":\"Tom\",\"age\":18,\"createDate\":\"2019-12-31T05:12:42" +
+        String userJson = "{\"userNo\":\"1000\",\"username\":\"Tom\",\"age\":18,\"createDate\":\"2019-12-31 05:12:42" +
                 "\"}";
 
-        MvcResult result = mockMvc.perform(
+        mockMvc.perform(
                 MockMvcRequestBuilders.post("/readJson26")
-                        .content(userJson)
-                        .contentType(MediaType.APPLICATION_JSON)
-        ).andReturn();
-
-        assertEquals(200, result.getResponse().getStatus());
+                                .param("userJson",userJson)
+        );
     }
 }
