@@ -1,8 +1,13 @@
 package org.example.springboot2pra07.entity;
 
 import com.fasterxml.jackson.annotation.JsonView;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import org.example.springboot2pra07.View.View_28;
 
+//將屬性是駝峰命名的改成底線式
+@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class UserDetail_28 {
 
     //搭配一個 View 類別（介面或 class），來指定哪些欄位要輸出。
